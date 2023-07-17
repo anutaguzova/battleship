@@ -50,9 +50,9 @@ function processMessage(message: { type: string; data: any }, ws: WebSocket) {
     case "add_user_to_room":
       addUserToRoom(message.data, ws);
       break;
-    case 'add_ships':
+    case "add_ships":
       addShips(message.data, ws);
-      break;  
+      break;
     default:
       console.warn("Unknown message type:", messageType);
   }

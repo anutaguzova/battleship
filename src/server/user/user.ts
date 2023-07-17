@@ -63,7 +63,7 @@ export function handleRegistration(data: string, ws: WebSocket) {
   const newPlayer: Player = {
     name: userName,
     index: players.length + 1,
-    ws: ws
+    ws: ws,
   };
 
   players.push(newPlayer);

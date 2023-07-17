@@ -1,11 +1,10 @@
-import { players } from './../db';
+import { players } from "./../db";
 import { WebSocket } from "ws";
 export interface User {
   name: string;
   password: string;
   index: number;
 }
-
 export interface RegistrationResponse {
   type: string;
   data: RegistrationResponseData | string;
@@ -22,7 +21,7 @@ export interface RegistrationResponseData {
 export interface Player {
   name: string;
   index: number;
-  ws : WebSocket;
+  ws: WebSocket;
 }
 
 export interface Room {
